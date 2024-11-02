@@ -5,10 +5,11 @@ import (
 	"context"
 	"encoding/json"
 	"log"
+	"testing"
 	"time"
 )
 
-func main() {
+func TestMain(m *testing.M) {
 	ctx := context.Background()
 	ctx, cancel := context.WithCancel(ctx)
 
